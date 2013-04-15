@@ -40,4 +40,9 @@ val_t *btree_last(btree_t *btree, val_t *v, btree_iter_t *iter);
 val_t *btree_next(btree_t *btree, btree_iter_t *iter);
 val_t *btree_prev(btree_t *btree, btree_iter_t *iter);
 
+#define BTREE_FOREACH(btree, beg, end, iter)					\
+	for (end = btree_first(btree, end, iter), beg = btree_first(btree, beg);\
+	     beg && beg != end;							\
+	     beg = btree_next(btree, iter))
+
 #endif
