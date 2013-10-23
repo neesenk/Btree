@@ -1,3 +1,7 @@
+/**
+ * author: Zhiyong Liu<neesenk@gmail.com>
+ */
+
 #ifndef _BTREE_H_
 #define _BTREE_H_
 

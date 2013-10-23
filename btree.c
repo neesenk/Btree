@@ -1,3 +1,7 @@
+/**
+ * author: Zhiyong Liu<neesenk@gmail.com>
+ */
+
 #include "btree.h"
 #include <string.h>
 #include <assert.h>

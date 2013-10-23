@@ -5,7 +5,7 @@
 #include "btree.h"
 #include <sys/time.h>
 
-#define N 10000000/2
+#define N 2000000/2
 val_t vals[N];
 
 int main(int argc,char * argv[])
@@ -16,7 +16,7 @@ int main(int argc,char * argv[])
 	btree_iter_t iter[1];
 
 	srandom(0);
-	tree = btree_create(8);
+	tree = btree_create(64);
 
 	for (i = 0; i < N; i++)
 		vals[i] = i;
